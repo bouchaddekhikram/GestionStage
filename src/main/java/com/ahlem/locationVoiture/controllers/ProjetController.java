@@ -30,27 +30,33 @@ public class ProjetController {
         return projetServiceImp.createProjet(projet);
     }
 
+
+    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
     @GetMapping("/all")
     public List<Projet> getallProjets() {
         return projetServiceImp.getAllProjets();
     }
-
+    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
     @GetMapping("/getone/{id}")
     public Projet getoneProjet(@PathVariable Long id) {
         return projetServiceImp.getProjetByID(id);
     }
-
-    @PutMapping("/update/{id}")
-    public Projet updateProjet(@PathVariable Long id, @RequestBody Projet projet) {
-        Projet c1 = projetServiceImp.getProjetByID(id);
+    @PreAuthorize( "hasRole('MODERATOR') or hasRole('ADMIN')")
+    @PutMapping("/update/{idProjet}/{idUser}")
+    public Projet updateProjet(@PathVariable Long idUser,@PathVariable Long idProjet, @RequestBody Projet projet) {
+        Projet c1 = projetServiceImp.getProjetByID(idProjet);
+        User m1= userDetailsServiceImpl.getUserByID(idUser);
         if (c1 != null) {
-            projet.setId(id);
+            projet.setId(idProjet);
+            projet.setUser(m1);
             return projetServiceImp.updateProjetByID(projet);
         } else {
             throw new RuntimeException("Failed ! ");
         }
     }
 
+
+    @PreAuthorize( "hasRole('MODERATOR') or hasRole('ADMIN')")
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<HttpStatus> deleteProjet(@PathVariable("id") long id) {
         try {
