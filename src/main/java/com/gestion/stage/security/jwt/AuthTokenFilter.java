@@ -1,8 +1,8 @@
-package com.ahlem.locationVoiture.security.jwt;
+package com.gestion.stage.security.jwt;
 
 import java.io.IOException;
 
-import com.ahlem.locationVoiture.security.services.UserDetailsServiceImpl;
+import com.gestion.stage.security.services.UserDetailsServiceImpl;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,8 +1,8 @@
-package com.ahlem.locationVoiture.security;
+package com.gestion.stage.security;
 
-import com.ahlem.locationVoiture.security.jwt.AuthEntryPointJwt;
-import com.ahlem.locationVoiture.security.jwt.AuthTokenFilter;
-import com.ahlem.locationVoiture.security.services.UserDetailsServiceImpl;
+import com.gestion.stage.security.jwt.AuthEntryPointJwt;
+import com.gestion.stage.security.jwt.AuthTokenFilter;
+import com.gestion.stage.security.services.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

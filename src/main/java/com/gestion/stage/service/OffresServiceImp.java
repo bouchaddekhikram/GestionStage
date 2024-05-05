@@ -1,7 +1,7 @@
-package com.ahlem.locationVoiture.service;
+package com.gestion.stage.service;
 
-import com.ahlem.locationVoiture.models.Offres;
-import com.ahlem.locationVoiture.repository.OffresRepository;
+import com.gestion.stage.models.Offres;
+import com.gestion.stage.repository.OffresRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

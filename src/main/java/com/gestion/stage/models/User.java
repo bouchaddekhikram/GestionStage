@@ -1,4 +1,4 @@
-package com.ahlem.locationVoiture.models;
+package com.gestion.stage.models;
 
 import java.util.ArrayList;
 import java.util.HashSet;

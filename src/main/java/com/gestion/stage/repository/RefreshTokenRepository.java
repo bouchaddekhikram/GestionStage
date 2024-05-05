@@ -1,9 +1,9 @@
-package com.ahlem.locationVoiture.repository;
+package com.gestion.stage.repository;
 
 import java.util.Optional;
 
-import com.ahlem.locationVoiture.models.RefreshToken;
-import com.ahlem.locationVoiture.models.User;
+import com.gestion.stage.models.RefreshToken;
+import com.gestion.stage.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Repository;

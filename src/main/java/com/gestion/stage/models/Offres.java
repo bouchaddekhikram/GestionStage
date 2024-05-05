@@ -1,4 +1,4 @@
-package com.ahlem.locationVoiture.models;
+package com.gestion.stage.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

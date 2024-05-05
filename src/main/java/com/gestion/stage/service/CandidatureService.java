@@ -1,6 +1,6 @@
-package com.ahlem.locationVoiture.service;
+package com.gestion.stage.service;
 
-import com.ahlem.locationVoiture.models.Candidature;
+import com.gestion.stage.models.Candidature;
 
 import java.util.List;
 

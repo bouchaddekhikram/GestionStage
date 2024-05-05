@@ -1,6 +1,6 @@
-package com.ahlem.locationVoiture.security.services;
+package com.gestion.stage.security.services;
 
-import com.ahlem.locationVoiture.repository.UserRepository;
+import com.gestion.stage.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ahlem.locationVoiture.models.User;
+import com.gestion.stage.models.User;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {

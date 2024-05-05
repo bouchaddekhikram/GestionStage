@@ -1,4 +1,4 @@
-package com.ahlem.locationVoiture.exception;
+package com.gestion.stage.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

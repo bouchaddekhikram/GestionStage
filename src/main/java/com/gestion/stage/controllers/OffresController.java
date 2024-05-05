@@ -1,12 +1,10 @@
-package com.ahlem.locationVoiture.controllers;
+package com.gestion.stage.controllers;
 
 
-import com.ahlem.locationVoiture.models.Candidature;
-import com.ahlem.locationVoiture.models.Offres;
-import com.ahlem.locationVoiture.models.User;
-import com.ahlem.locationVoiture.security.services.UserDetailsServiceImpl;
-import com.ahlem.locationVoiture.service.CandidatureServiceImp;
-import com.ahlem.locationVoiture.service.OffresServiceImp;
+import com.gestion.stage.models.Offres;
+import com.gestion.stage.models.User;
+import com.gestion.stage.security.services.UserDetailsServiceImpl;
+import com.gestion.stage.service.OffresServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

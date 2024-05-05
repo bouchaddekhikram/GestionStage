@@ -1,4 +1,4 @@
-package com.ahlem.locationVoiture.payload.response;
+package com.gestion.stage.payload.response;
 
 public class MessageResponse {
 	private String message;

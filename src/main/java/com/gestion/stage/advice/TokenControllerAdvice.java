@@ -1,4 +1,4 @@
-package com.ahlem.locationVoiture.advice;
+package com.gestion.stage.advice;
 
 import java.util.Date;
 
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 
-import com.ahlem.locationVoiture.exception.TokenRefreshException;
+import com.gestion.stage.exception.TokenRefreshException;
 
 @RestControllerAdvice
 public class TokenControllerAdvice {

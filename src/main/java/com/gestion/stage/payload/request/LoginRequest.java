@@ -1,4 +1,4 @@
-package com.ahlem.locationVoiture.payload.request;
+package com.gestion.stage.payload.request;
 
 import jakarta.validation.constraints.NotBlank;
 

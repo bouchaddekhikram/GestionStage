@@ -1,11 +1,10 @@
-package com.ahlem.locationVoiture.repository;
+package com.gestion.stage.repository;
 
 import java.util.Optional;
 
+import com.gestion.stage.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-
-import com.ahlem.locationVoiture.models.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {

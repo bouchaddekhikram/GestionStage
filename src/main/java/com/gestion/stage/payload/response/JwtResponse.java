@@ -1,4 +1,4 @@
-package com.ahlem.locationVoiture.payload.response;
+package com.gestion.stage.payload.response;
 
 import java.util.List;
 

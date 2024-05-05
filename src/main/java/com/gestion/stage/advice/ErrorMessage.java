@@ -1,4 +1,4 @@
-package com.ahlem.locationVoiture.advice;
+package com.gestion.stage.advice;
 
 import java.util.Date;
 

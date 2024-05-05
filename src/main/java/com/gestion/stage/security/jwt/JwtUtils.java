@@ -1,8 +1,8 @@
-package com.ahlem.locationVoiture.security.jwt;
+package com.gestion.stage.security.jwt;
 
 import java.util.Date;
 
-import com.ahlem.locationVoiture.security.services.UserDetailsImpl;
+import com.gestion.stage.security.services.UserDetailsImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

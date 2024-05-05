@@ -1,26 +1,27 @@
-package com.ahlem.locationVoiture.controllers;
+package com.gestion.stage.controllers;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import com.ahlem.locationVoiture.exception.TokenRefreshException;
-import com.ahlem.locationVoiture.payload.request.SignupRequest;
-import com.ahlem.locationVoiture.payload.request.TokenRefreshRequest;
-import com.ahlem.locationVoiture.payload.response.JwtResponse;
-import com.ahlem.locationVoiture.payload.response.MessageResponse;
-import com.ahlem.locationVoiture.payload.response.TokenRefreshResponse;
-import com.ahlem.locationVoiture.repository.RoleRepository;
-import com.ahlem.locationVoiture.repository.UserRepository;
-import com.ahlem.locationVoiture.security.jwt.JwtUtils;
-import com.ahlem.locationVoiture.security.services.RefreshTokenService;
-import com.ahlem.locationVoiture.security.services.UserDetailsImpl;
+import com.gestion.stage.exception.TokenRefreshException;
+import com.gestion.stage.payload.request.SignupRequest;
+import com.gestion.stage.payload.request.TokenRefreshRequest;
+import com.gestion.stage.payload.response.JwtResponse;
+import com.gestion.stage.payload.response.MessageResponse;
+import com.gestion.stage.payload.response.TokenRefreshResponse;
+import com.gestion.stage.repository.RoleRepository;
+import com.gestion.stage.repository.UserRepository;
+import com.gestion.stage.security.jwt.JwtUtils;
+import com.gestion.stage.security.services.RefreshTokenService;
+import com.gestion.stage.security.services.UserDetailsImpl;
+import com.gestion.stage.models.Role;
+import com.gestion.stage.models.User;
 import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -32,11 +33,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ahlem.locationVoiture.models.ERole;
-import com.ahlem.locationVoiture.models.RefreshToken;
-import com.ahlem.locationVoiture.models.Role;
-import com.ahlem.locationVoiture.models.User;
-import com.ahlem.locationVoiture.payload.request.LoginRequest;
+import com.gestion.stage.models.ERole;
+import com.gestion.stage.models.RefreshToken;
+import com.gestion.stage.payload.request.LoginRequest;
 
 @CrossOrigin(origins = "*", maxAge = 999999999)
 @RestController
