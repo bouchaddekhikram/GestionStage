@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -88,12 +89,12 @@ public class User {
 	public void setRoles(Set<Role> roles) {
 		this.roles = roles;
 	}
-
+	@JsonIgnore
 	@OneToMany(mappedBy = "user")
-	private List<Tache> taches = new ArrayList<Tache>();
-
+	private List<Offres> offres = new ArrayList<Offres>();
+	@JsonIgnore
 	@OneToMany(mappedBy = "user")
-	private List<Projet> projets = new ArrayList<Projet>();
+	private List<Candidature> candidatures = new ArrayList<Candidature>();
 
 
 }

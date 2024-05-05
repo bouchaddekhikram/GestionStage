@@ -1,6 +1,4 @@
 package com.ahlem.locationVoiture.models;
-import com.ahlem.locationVoiture.models.Tache;
-import com.ahlem.locationVoiture.models.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -10,7 +8,7 @@ import java.util.List;
 
 @Entity
 @Data
-public class Projet {
+public class Candidature {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -18,16 +16,24 @@ public class Projet {
     private Date dateDebut;
     @Column(name = "dateFin")
     private Date dateFin;
-    @Column(name = "nomProjet")
-    private String nomProjet;
-    @Column(name = "description")
-    private String description;
+    @Column(name = "nivEtude")
+    private String nivEtude;
+    @Column(name = "etablissement")
+    private String etablissement;
+    @Column(name = "specialite")
+    private String specialite;
+    @Column(name = "typeStage")
+    private String typeStage;
 
+
+
+    @JsonIgnore
     @ManyToOne
     private User user ;
     @JsonIgnore
-    @OneToMany(mappedBy = "projet")
-    private List<Tache> taches = new ArrayList<Tache>();
+    @ManyToOne
+    private Offres offres;
+
 
 
 
